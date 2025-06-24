@@ -1,0 +1,285 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClumsyWallpaper - Your Source for Unique Wallpapers</title>
+    <style>
+        /* Basic CSS for styling - you'd want to move this to a separate .css file */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #555;
+            color: #fff;
+            padding: 0.5rem 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            background-color: #f0f0f0;
+        }
+        .search-input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 200px; /* Adjust as needed */
+        }
+        .search-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+        .search-button:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .category-section {
+            margin-bottom: 30px;
+        }
+        .wallpaper-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .wallpaper-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .wallpaper-item img {
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensures images cover the area without distortion */
+            display: block;
+        }
+        .wallpaper-details {
+            padding: 15px;
+        }
+        .wallpaper-details h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .wallpaper-details p {
+            margin-bottom: 10px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        .price {
+            font-weight: bold;
+            color: #28a745;
+            font-size: 1.1em;
+        }
+        .buy-button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .buy-button:hover {
+            background-color: #0056b3;
+        }
+        .upload-section {
+            text-align: center;
+            padding: 30px;
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .upload-section button {
+            background-color: #6f42c1;
+            color: #fff;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        .upload-section button:hover {
+            background-color: #5a32a1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ClumsyWallpaper</h1>
+        <p>Discover and Share Amazing Wallpapers</p>
+    </header>
+
+    <nav>
+        <a href="#hot-wallpapers">Hot Wallpapers</a>
+        <a href="#top-selling">Top Selling</a>
+        <a href="#new-arrivals">New Arrivals</a>
+        <a href="#upload-wallpaper">Upload Wallpaper</a>
+        </nav>
+
+    <div class="search-container">
+        <input type="search" class="search-input" placeholder="Search wallpapers...">
+        <button class="search-button">Search</button>
+    </div>
+
+    <div class="container">
+        <section id="hot-wallpapers" class="category-section">
+            <h2>🔥 Hot Wallpapers</h2>
+            <p>Check out the most famous and trending wallpapers right now!</p>
+            <div class="wallpaper-grid" id="hot-wallpapers-grid">
+                <div class="wallpaper-item">
+                    <img src="https://via.placeholder.com/300x200?text=Hot+Wallpaper+1" alt="Hot Wallpaper 1">
+                    <div class="wallpaper-details">
+                        <h3>Abstract Waves</h3>
+                        <p>By Jane Doe</p>
+                        <p class="price">$5.00</p>
+                        <a href="#" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="wallpaper-item">
+                    <img src="https://via.placeholder.com/300x200?text=Hot+Wallpaper+2" alt="Hot Wallpaper 2">
+                    <div class="wallpaper-details">
+                        <h3>City Night Lights</h3>
+                        <p>By John Smith</p>
+                        <p class="price">$7.50</p>
+                        <a href="#" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <hr>
+
+        <section id="top-selling" class="category-section">
+            <h2>📈 Top Selling Wallpapers</h2>
+            <p>Our most popular wallpapers bought by the community!</p>
+            <div class="wallpaper-grid" id="top-selling-grid">
+                <div class="wallpaper-item">
+                    <img src="https://via.placeholder.com/300x200?text=Top+Selling+1" alt="Top Selling Wallpaper 1">
+                    <div class="wallpaper-details">
+                        <h3>Forest Path</h3>
+                        <p>By Alice Green</p>
+                        <p class="price">$6.00</p>
+                        <a href="#" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="wallpaper-item">
+                    <img src="https://via.placeholder.com/300x200?text=Top+Selling+2" alt="Top Selling Wallpaper 2">
+                    <div class="wallpaper-details">
+                        <h3>Mountain Panorama</h3>
+                        <p>By Bob White</p>
+                        <p class="price">$8.00</p>
+                        <a href="#" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <hr>
+
+        <section id="new-arrivals" class="category-section">
+            <h2>✨ New Arrivals</h2>
+            <p>Discover the latest wallpapers uploaded by our talented artists!</p>
+            <div class="wallpaper-grid" id="new-arrivals-grid">
+                <div class="wallpaper-item">
+                    <img src="https://via.placeholder.com/300x200?text=New+Arrival+1" alt="New Arrival Wallpaper 1">
+                    <div class="wallpaper-details">
+                        <h3>Ocean Sunset</h3>
+                        <p>By Chris Blue</p>
+                        <p class="price">$4.50</p>
+                        <a href="#" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="wallpaper-item">
+                    <img src="https://via.placeholder.com/300x200?text=New+Arrival+2" alt="New Arrival Wallpaper 2">
+                    <div class="wallpaper-details">
+                        <h3>Cosmic Dust</h3>
+                        <p>By Dana Grey</p>
+                        <p class="price">$9.00</p>
+                        <a href="#" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <hr>
+
+        <section id="upload-wallpaper" class="upload-section">
+            <h2>Upload Your Wallpaper</h2>
+            <p>Share your creativity with the world and earn money! We take a <strong>7% commission</strong> on every sale.</p>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <input type="file" id="wallpaperFile" name="wallpaper" accept="image/*" style="display: none;">
+                <label for="wallpaperFile" class="buy-button">Choose File</label>
+                <p id="fileNameDisplay" style="margin-top: 10px;">No file chosen</p>
+                <input type="text" placeholder="Wallpaper Title" style="width: calc(100% - 22px); padding: 10px; margin-top: 15px; border: 1px solid #ddd; border-radius: 5px;">
+                <textarea placeholder="Description (optional)" rows="4" style="width: calc(100% - 22px); padding: 10px; margin-top: 10px; border: 1px solid #ddd; border-radius: 5px; resize: vertical;"></textarea>
+                <input type="number" step="0.01" placeholder="Price (e.g., 5.99)" style="width: calc(100% - 22px); padding: 10px; margin-top: 10px; border: 1px solid #ddd; border-radius: 5px;">
+                <button type="submit" style="margin-top: 20px;">Upload Wallpaper</button>
+            </form>
+            <script>
+                // Basic JavaScript to display selected file name
+                document.getElementById('wallpaperFile').addEventListener('change', function() {
+                    const fileName = this.files[0] ? this.files[0].name : 'No file chosen';
+                    document.getElementById('fileNameDisplay').textContent = fileName;
+                });
+
+                // JavaScript for basic search bar (client-side only, for demonstration)
+                // For a real site, search would involve sending a request to the backend
+                document.querySelector('.search-button').addEventListener('click', function() {
+                    const searchTerm = document.querySelector('.search-input').value.toLowerCase();
+                    alert('Searching for: "' + searchTerm + '"\n\n(Note: This is a frontend placeholder. Real search requires backend processing.)');
+                    // In a real application, you would send this searchTerm to your backend
+                    // and display the results, possibly in a new section or by filtering existing ones.
+                });
+            </script>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ClumsyWallpaper. All rights reserved.</p>
+        <p>Terms of Service | Privacy Policy</p>
+    </footer>
+</body>
+</html>
